@@ -53,7 +53,7 @@ import ilustracion2 from "../imagenes/ilustracion2.png"
       
        <img className='logo_iglesia' src={imagen} />
        <div className='artilleri'>
-       <p className='parrafo1'>En los años 1990   se encomendo a el padre  Marino  Morlin un saleciano quien 
+       <p className='parrafo1'>En los años 1990   se e|ncomendo a el padre  Marino  Morlin un saleciano quien 
        fue enviado a evangelizar a la comunidad  de los robles.
           Lamentablemente murio en un  accidente. en su lugar   
  fue encomendada esta  misión a el  padre  Francisco Verar quien continua la obra de el Padre Morlin.
@@ -175,7 +175,7 @@ import ilustracion2 from "../imagenes/ilustracion2.png"
      </div> {/*  finn*/}
      <div class="image-text-container">
        <img  className="ilustracion2_seccion7" src={ilustracion2_seccion7} alt="Imagen 2" />
-       <p id="p1"  PADRE FRANCISCO VERAR> 1993-1999</p>
+       <p id="p1"  PADRE FRANCISCO VERAR>  PADRE FRANCISCO VERAR 1993-1999 </p>
        </div> {/*  fi7nn*/}
        <div class="image-text-container">
        <img   className="ilustracion3_seccion7" src={ilustracion3_seccion7} alt="Imagen 3" />
