@@ -1,0 +1,727 @@
+.App-header_historia{
+    background-image: url(../imagenes/logo512.png);
+    background-size: 100% 100%;
+    min-height: 125vmin;
+    display: flex;
+    color: rgb(5, 5, 5);
+  
+  }
+
+    
+  .artilleri{
+
+   display: flex;
+       position: relative;
+background-image: url(../imagenes/altar.jpg);
+width: 60%;
+height: 20%;
+padding :8%; 
+background-size: cover;
+background-repeat: no-repeat;
+
+} 
+
+   .logo_iglesia{
+    position: absolute;
+    width: 39%; /* Ancho deseado */
+    height: 69%;
+    border-color: #f80a0a;
+    right: 0%;
+    top: 148%;
+
+    
+   }
+
+
+   .parrafo1 {
+   
+  width: 301%;
+  height: auto;
+  text-align: center;
+  background-color: rgba(245, 237, 237, 0.822);
+  font-size: 200%; /* Tamaño de fuente relativo */
+}  
+
+   /*  movil  seccion5   */ 
+
+@media screen and (max-width: 768px) {
+  .parrafo1 {
+    font-size: 0.7rem; /* Mantén el tamaño del texto */
+    max-height: calc(100vh - 200px); /* Establece una altura máxima para el párrafo */
+  
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .parrafo1 {
+    font-size: 0.7rem; /* Mantén el tamaño del texto */
+    max-height: calc(100vh - 200px); /* Establece una altura máxima para el párrafo */
+
+  }
+}
+  
+  .reseña{
+     /* Establece un rell
+     /* Asegura que el contenedor no supere el 100% del ancho de la pantalla */
+    background-color: rgba(247, 243, 243, 0.822);
+    padding: 35% 10%; 
+/* Asegura que los elementos estén uno encima del otro */
+  /* Otros estilos para el contenedor .reseña */
+  position: relative; 
+    
+  }
+  .parrafo_2 {
+    position:absolute;
+    border: 2px solid #e7e3e394;
+    text-align: center;
+    background-color: rgba(100, 98, 96, 0.61);
+    font-size: 25px;
+    width: 57%;
+    left:0%;
+    height: 36.7%;
+         top: 0%;
+  }
+   /* movile  seccion2*/
+  @media screen and (max-width: 768px) {
+  
+
+    .parrafo_2{
+      font-size: 1.0rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+  }
+  @media screen and (max-width: 650px) {
+  
+
+    .parrafo_2{
+      font-size: 0.5rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+  }
+  
+
+  .imagen_reseña1 {
+    width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    position: absolute; 
+    right: 0;
+    padding: 5% 0%;
+  }
+  .imagen_reseña2{
+ 
+      width: 50%;
+      height: 65%;
+      
+      
+    /*  position: absolute;  La imagen estará en el borde derecho */
+  }
+  
+  .imagen_reseña3 {
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 43%; /* Ancho relativo al contenedor .reseña */
+    height: 100%; /* Altura relativa al contenedor .reseña */
+    
+  
+  }
+
+  .mensaje-animado {
+    animation: slideFromBottom 3.5s ease-in-out forwards;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f0f0f0bb;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .imagen_animada{
+    animation: slideFromBottom 3.5s ease-in-out forwards;
+    position: absolute;
+    width: 46%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f0f0f0bb;
+    padding: 10% 12% 10%;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  @keyframes slideFromBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .seccion3{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    padding:  39% 20%;
+  
+    }
+    .parrafo3 {
+      position: absolute;
+      border: 2px solid #e7e3e394;
+      text-align: center;
+      background-color: rgb(255, 254, 253);
+      font-size: 25px;
+      width: 35%;
+      /* height: 45%; */
+       left: 0%;
+       top :0%;
+       height : 25%;
+    }
+     /*    movil   seccion 3  */
+    @media screen and (max-width: 768px) {
+  
+
+      .parrafo3{
+        font-size: 0.6rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+  
+
+      .parrafo3{
+        font-size: 0.5.0rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+      }
+    }
+    
+    
+  
+   
+   .imagen_reseña12{
+    
+    position: absolute; /* Establece la posición absoluta para la imagen */
+    top: 0%; /* La imagen estará en el borde superior */
+    right: 0%; /* La imagen estará en el borde derecho */
+    width: 65%;
+    height: 51%;
+    padding: 1px;
+  
+  
+   } 
+  .imagen_reseña22 {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 66%;
+    width:  60%;
+  }
+  
+  .imagen_reseña2 {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 75%;
+    width:  35%;
+  }
+  
+  
+
+ 
+
+  .imagen_reseña32 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 70%;
+    height: 50%;
+    
+  }
+  
+
+  .seccion4{
+       position: relative;
+     background-color: rgb(255, 253, 253);
+     padding:  24% 20%; 
+  }
+  .jdimas{
+    position: absolute;
+    right: 2.5%;
+    top: 3.8%;
+    width:  40%;
+    height: 85%;
+    }
+    
+  .parrafo4{
+    background-color: rgb(227, 231, 231);
+   top: 4%;
+   left: 0%;
+   width:55%;
+   height:90%;
+   font-size: 200%;
+    position: absolute
+ } 
+
+  /*   movil  */
+ @media screen and (max-width: 768px) {
+  
+
+  .parrafo4 {
+    font-size: 1.0rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+}
+
+@media screen and (max-width: 650px) {
+  
+
+  .parrafo4 {
+    font-size: 0.6rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+}
+  .seccion5{
+    background-color: #ffffff;
+    padding: 50%;
+    position: relative;
+  
+  }
+     
+  .jvier{
+    position:absolute ;
+    top :29%;
+    width:30%;
+    height: 46%;
+    left: 50%;
+    border: none; /* Esta línea elimina los bordes de la imagen */
+  }
+
+  .marino{
+    position: absolute;
+         top : 0%;
+          left: 50%;;
+          height: 29%;
+          width: 25%;
+    
+      } 
+  .parrafo5 {
+    position: absolute;
+    padding: 10%; /* Reducing padding to avoid taking up too much space */
+    width: 50%; /* Increasing width to 500% */
+    height: 35%; /* Keeping height at 35% */
+    text-align: center;
+    background-color: rgb(255, 255, 255); /* Adding white background */
+    font-family: Arial, sans-serif; /* Setting font family */
+    font-weight: 100%;
+    line-height: 1.6; /* Setting line height for better readability */
+    left:0%;
+    top: 1%;
+  } 
+    
+
+           /* movil */
+  @media screen and (max-width: 768px) {
+  
+
+    .parrafo5{
+      font-size: 0.2rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+      
+    }
+  }
+  
+  
+  .parrafo6{
+    text-align: center; /* Alineación del texto a la izquierda */
+    background-color: white; /* Fondo blanco */
+    padding: 3%;
+    border-radius: 2%; /* Bordes redondeados */
+    position :absolute;
+    top :35%;
+    line-height: 1.6; /* Setting line height for better readability */
+    width: 50%;
+    height: 15%;
+    left: 0%;
+    font-size: 135%;
+  }
+      
+       /*  movil */     
+
+  @media screen and (max-width: 768px) {
+  
+
+    .parrafo6{
+      font-size: 0.5rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+      
+    }
+  }
+  
+   
+  .parrafo7{
+    width: 45%;
+    height: 17%;
+    background-color: #fff8f8;
+    position: absolute;
+    left: 50.9%;
+      bottom: 0%;
+      font-size: 118%;
+
+  }
+
+         /* movil  seccion 7 */
+  @media screen and (max-width: 768px) {
+  
+
+    .parrafo7{
+      font-size: 0.7rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+      height: auto;
+      width: auto;
+      
+    }
+  }
+
+     
+  @media screen and (max-width: 768px) {
+    .parrafo7 {
+      font-size: 0.7rem; /* Mantén el tamaño del texto */
+      max-height: calc(100vh - 200px); /* Establece una altura máxima para el párrafo */
+      overflow-y: auto; /* Agrega desplazamiento vertical si el contenido se desborda */
+    }
+  }
+  
+      
+  .iglesia_seccion55{
+  
+    position: absolute;
+    right: 0%;
+    width: 10%;
+    top: 0%;
+    height: 100%;
+    border: none; /* Esta línea elimina los bordes de la imagen */
+  }    
+  .iglesia_seccio5{
+            position:absolute;
+            left :0%;
+             width: 50%;
+             height: 38%;
+             padding-top: 10px ;
+             bottom: 1%;
+             border: none; /* Esta línea elimina los bordes de la imagen */
+  }
+
+  .mi-seccion {
+    position:relative;
+    /* Estilos para tu sección */
+    background-color: #fffffffb; /* Color de fondo de .mi-seccion */
+    padding: 45%;
+    border: 1px solid #a7df0b; /* Borde de .mi-seccion */
+   
+  }
+  .historia_foto
+  
+  {
+       position:absolute ;
+      width: 52.9%;
+      height: 51%;
+      left:0% ;
+      bottom: 0%;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+  }
+     .misa{
+        top :0%;
+          position: absolute;
+        left: 0%; 
+        width: 53%;
+        height: 49%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+     }
+    .chavez{
+      
+     position: absolute;
+     right: 1%;
+     width: 45.5%;
+     height: 80.6%;
+     top: 19%;
+   }
+
+ 
+  .seccion6 {
+    position: relative;
+    background-image: url(../imagenes/sala.jpg);
+    padding: 25%;
+    background-repeat: round;
+   
+  }
+  .Iglesiatotal {
+    position: absolute;
+    right: 0%;
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+  }
+   
+  
+  .seccion7 {
+    padding: 7%;
+    background-image: url(../imagenes/collage2.jpg); /* Color de fondo para distinguir la sección */
+    background-repeat: round;
+    background-size: cover;
+    border: 9px solid #a8a9aa62; /* Borde más grueso y color celeste */ 
+    position:relative;
+  }
+
+  .seccion8{   
+    padding: 7%;
+    background-image: url(../imagenes/collage3.jpg); /* Color de fondo para distinguir la sección */
+    background-repeat: space;
+    background-size: cover;
+    justify-content: flex-start; /* Alineación desde el lado izquierdo */
+    border: 9px solid  #a8a9aa71; /* Borde más grueso y color celeste */     
+    
+  }
+  .image-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Espacio entre contenedores de imagen y texto */
+    padding :10px;
+    
+  }
+ 
+  #parrocos {
+    align-self: flex-start;
+    padding: 1px;
+    background-color: #ffffffc4;
+    font-size: 45px;
+    width: 75%;
+  }
+  .ilustracion1_seccion7,
+  .ilustracion2_seccion7,
+  .ilustracion3_seccion7 {
+    width: 45%;
+    height: 25%;
+    animation: cambioColor 3s infinite; /* Aplicar la animación 'cambioColor' de manera infinita durante 3 segundos */
+  }
+  
+  .ilustracion4_seccion8,
+  .ilustracion2_seccion8,
+  .ilustracion3_seccion8{
+    width:  45%; /* Ancho de las imágenes */
+    height: 25%; /* Altura automática para mantener la proporción */
+    animation: cambioColor 3s infinite; /* Aplicar la animación 'cambioColor' de manera infinita durante 3 segundos */
+    box-shadow: 0 0 10px 7px #fffdfd, 0 0 40px 10px rgb(255, 255, 255), 0 0 80px 20px rgb(19, 39, 48), 0 0 120px 30px rgba(243, 242, 242, 0.979);
+  }
+    /*   movil */         
+  @media screen and (max-width: 768px) {
+    .ilustracion4_seccion8,
+    .ilustracion2_seccion8,
+    .ilustracion3_seccion8{
+      width:  75%; /* Ancho de las imágenes */
+      height: 45%; /* Altura automática para mantener la proporción */
+      box-shadow: 0 0 10px 7px #fffdfd, 0 0 40px 10px rgb(255, 255, 255), 0 0 80px 20px rgb(19, 39, 48), 0 0 120px 30px rgba(243, 242, 242, 0.979);
+    }
+  }
+  @media screen and (max-width: 768px) {
+  .ilustracion1_seccion7,
+  .ilustracion2_seccion7,
+  .ilustracion3_seccion7 {
+    width: 75%;
+    height: 45%;
+    animation: cambioColor 3s infinite; /* Aplicar la animación 'cambioColor' de manera infinita durante 3 segundos */
+  }
+}
+
+
+
+  @keyframes cambioColor {
+    0% {
+      box-shadow: 0 15px 20px rgba(255, 255, 255, 0.8); /* Inicio con sombra blanca */
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.966); /* Transición a sombra dorada */
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Volver a sombra blanca */
+    }
+  }
+  
+  .willian {
+    padding: 5%;
+    background-image: url(../imagenes/callage.jpg);
+    background-color: rgba(255, 255, 255, 0.788);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+.parrafo_willian {
+  text-align: center; /* Alinea el texto al centro */
+  font-size: 18px; /* Tamaño del texto */
+  background-color: rgb(240, 235, 235); /* Fondo blanco con opacidad */
+  padding: 10px; /* Espaciado interno para el párrafo */
+  box-shadow: 30px 30px 30px rgba(255, 255, 255, 0.7); /* Aumenta el tamaño de la sombra */
+  margin-top: 50px; /* Aumenta el espacio entre la imagen y el párrafo */
+  text-shadow: none; /* Elimina la sombra de las letras */
+  /* Agrega un comentario describiendo el efecto de luz */
+  /* Este efecto de 'box-shadow' crea una ilusión de luz radiante alrededor del párrafo */
+}
+ 
+  .ilustracion4_seccion7 {
+    width: 25%;
+    height: auto;
+    margin-right: 20px; /* Espacio entre la imagen y el párrafo */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.7); /* Aumentar el desenfoque para una sombra más grand  */
+}
+  
+
+   
+    .parrafo8{
+           position :absolute;
+      background-color: rgb(255, 255, 255);
+      width:  47%;
+      height: 20%;
+      right: 0%;
+      font-size: 175%;
+      padding: 4%;
+      top: 1%;
+      text-align: center;
+    }
+         /* movil  parrafo8 */
+
+    @media screen and (max-width: 768px) {
+      .parrafo8 {
+        font-size: 0.7rem; /* Mantén el tamaño del texto */
+        max-height: calc(100vh - 200px); /* Establece una altura máxima para el párrafo */
+      
+      }
+    }
+    
+ 
+    @keyframes parpadeo {
+      0% {
+        box-shadow: 20px 20px 20px 20px rgba(51, 81, 250, 0.3);
+      }
+      50% {
+        box-shadow: none; /* Sin sombra */
+      }
+      100% {
+        box-shadow: 20px 20px 20px 20px rgba(253, 253, 253, 0.3);
+      }
+    }
+    
+    .parrafo9 {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.788);
+      width: 46%;
+      height: 49%;
+      bottom: 35%;
+      left: 2%;
+      font-size: xx-large;
+      padding: 15px;
+      border: 4px solid rgba(238, 175, 15, 0.534);
+      animation: parpadeo 3s infinite; /* Aplicar la animación 'parpadeo' de manera infinita durante 2 segundos */
+    }
+            /*  movil 8 */
+    @media screen and (max-width: 768px) {
+      .parrafo9 {
+        font-size: 0.6rem; /* Mantén el tamaño del texto */
+        max-height: calc(100vh - 200px); /* Establece una altura máxima para el párrafo */
+     
+      }
+    }
+    .parrafo_final {
+      text-align: left; /* Alinea el texto a la izquierda */
+      /* text-align: center; */ /* Esta línea está comentada, parece estar sobreescribiendo la anterior, así que se comenta para evitar conflicto */
+      text-shadow: none; /* Elimina la sombra del texto */
+      font-size: 34px; /* Ajustar el tamaño del texto */
+      background-color: aliceblue;
+      padding: 9%;
+    }
+
+    /* Estilos base para el párrafo */
+.parrafo_final {
+  font-size: 1.5rem; /* Tamaño de texto predeterminado */
+  width: 50%;
+  height: 20%; /* Altura predeterminada */
+ 
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 750px) {
+  .parrafo_final {
+    font-size: 0.7rem; /* Reducción de tamaño de texto para dispositivos móviles */
+    height: auto; /* Altura automática para adaptarse al contenido */
+    padding: 5px; /* Padding reducido para dispositivos móviles */
+  }
+}
+
+/* Media query para pantallas más pequeñas (celulares) */
+@media screen and (max-width: 650px) {
+  .parrafo_final {
+    font-size: 0.6rem; /* Tamaño de texto más pequeño para pantallas más pequeñas */
+    padding: 3px; /* Padding más reducido para pantallas más pequeñas */
+  }
+}
+
+
+    .parrafo5 span {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .Reseña_historica{
+      font-weight: bold;
+      font-size: 128%;
+    }
+    .nombre {
+      font-weight: bold;
+    }
+    .fecha {
+      font-style: italic;
+    }
+    .anos {
+      font-weight: bold;
+    }
+    .tipo {
+      font-style: italic;
+    }
+    .parroco {
+      font-weight: bold;
+    }
+
+    .iglesia_seccion55{
+  
+      position: absolute;
+      right: 0%;
+      width: 26%;
+      top: 0%;
+      height: 50%;
+    }
+    .iglesia_seccio5{
+              position:absolute;
+              left :0%;
+               width: 50%;
+               height: 38%;
+               bottom: 0%;
+    }
+    
+    #p1{
+      padding: 1%;
+      background-color: #fffdfd;
+      width: 25%;
+      animation: lightEffect 4s infinite alternate; /* Animación */
+      
+    }
+    
+@keyframes lightEffect {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5; /* Atenuar la opacidad a la mitad */
+    transform: scale(0.95); /* Reducir ligeramente la escala */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+  
+ 
+  
