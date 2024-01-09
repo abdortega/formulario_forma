@@ -2,7 +2,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Historia from "./componentes/Historia";
- 
+import Tramites from  "./componentes/Tramites"
 
 
 function App() { // 
@@ -13,10 +13,11 @@ function App() { //
   return (
          <div>
         
-            <Historia/>
+            
+            <Tramites/>
+
+
         
-     
-                    
            </div>   /* fin de seccion todo  */
 
   );
