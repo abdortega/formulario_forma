@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Historia from "./componentes/Historia";
 import Tramites from  "./componentes/Tramites"
+import Registro from "./componentes/Registro"
 
 
 function App() { // 
@@ -11,15 +12,14 @@ function App() { //
   
 
   return (
+         <>
          <div>
-        
-            
-            <Tramites/>
-
-
-        
-           </div>   /* fin de seccion todo  */
-
+           {/*  <Historia/> 
+          <Tramites/> */}
+         <Registro/>
+          
+           </div>  
+             </>
   );
 }
 

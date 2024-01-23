@@ -3,9 +3,7 @@ import react,{useState} from 'react';
 function  Registrarlibro() {
    
     
- const [datos,setDatos]=useState({
-   
-   libro:"",
+ const [datos,setDatos]=useState({ 
    autor:"", 
    codigl:"",
   

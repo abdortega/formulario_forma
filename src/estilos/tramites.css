@@ -1,6 +1,211 @@
- 
 
- .tramites{
-        background-color: red;
- }
+.wraper_total {
+  position: relative;
+  padding: 24% 20%;
+  background-image: url("../imagenes_tramite/sala.jpg");
+  background-color: #ffffff80;
+  background-repeat: ro; /* Evitar repetición de la imagen de fondo */
+  background-size: cover; /* Ajustar el tamaño de la imagen para cubrir todo el contenedor */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 
+    0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.5) inset,
+    0 0 20px rgba(255, 255, 0, 0.7),
+    0 0 20px rgba(255, 255, 0, 0.7) inset;
+}
+
+/* Estilo específico para el contenedor del componente */
+.mi-componente {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: rgba(109, 21, 192, 0.712);
+  padding: 11%;
+  text-align: center;
+  height: 79%;
+  width: 85%;
+  max-width: 600px;
+  border-radius: 5px;
+  animation: luz 3s ease-out infinite;
+}
+.maria_madre {
+  top: 0%;
+  right: 0%;
+  position: absolute;
+  border: none; /* Elimina los bordes */
+  box-shadow: 
+    0 0 20px rgba(255, 255, 255, 0.5), /* Sombra blanca */
+    0 0 20px rgba(255, 255, 0, 0.7), /* Sombra amarilla */
+    0 0 30px rgba(255, 0, 0, 0.5); /* Sombra roja más pronunciada */
+  z-index: 1; /* Asegura que la imagen esté sobre el fondo */
+}
+
+/* Añade decoración a la imagen */
+.maria_madre::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  z-index: -1; /* Asegura que la decoración esté detrás de la imagen */
+}
+
+/* Opcional: Añade un resplandor alrededor de la imagen */
+.maria_madre::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(255, 255, 255, 0.7), transparent);
+  border-radius: 50%;
+  z-index: -2; /* Asegura que el resplandor esté detrás de la imagen */
+}
+/* Resto de estilos específicos para el contenedor del componente */
+.mi-componente .botones {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  background-color: aliceblue;
+}
+
+.mi-componente .botones button.clicked {
+  background-color: blueviolet;
+  color: white;
+}
+
+.mi-componente .botones button:hover {
+  background-color: purple;
+  padding: 9px 26px;
+  border: none;
+  border-radius: 2%;
+}
+
+.mi-componente .mensaje-inicial {
+  background-color: blueviolet;
+  padding: 20px;
+  color: rgb(255, 15, 15);
+  font-size: 4vw;
+  margin-bottom: 20px;
+}
+
+/* ... Agregar más estilos específicos para .mi-componente si es necesario ... */
+
+@keyframes luz {
+  0% {
+    background-color: rgba(255, 255, 255, 0.171);
+  }
+  50% {
+    background-color: rgba(137, 43, 226, 0.849);
+  }
+  100% {
+    background-color: transparent;
+  }
+  75% {
+    background-color: rgb(46, 179, 189);
+  }
+}
+.inside {
+  font-family: 'Times New Roman', serif;
+  font-size: 2.9em;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 25px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra negra */
+
+}
+.part1 {
+  background-color: #f8f8f8; /* Color de fondo */
+  padding: 20px; /* Espaciado interno para mejorar la legibilidad */
+  font-family: 'Arial', sans-serif; /* Tipo de letra */
+  font-size: 18px; /* Tamaño de letra */
+  line-height: 1.6; /* Altura de línea para una mejor legibilidad */
+  text-align: center; /* Centrar el texto */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de relieve */
+}
+.part2 {
+  padding: 29%;
+  background: linear-gradient(to bottom, #f9fbfc, #11c7d4); /* Fondo degradado de azul claro a oro */
+}
+
+.part3 {
+  padding: 10%;
+  background: linear-gradient(to bottom,  #11c7d4,  #f7f1f3); /* Fondo degradado de colores suaves */
+  color: #333; /* Texto en color oscuro para contrastar con el fondo */
+  text-align: center; /* Centrar el texto */
+  font-family: 'Georgia', serif; /* Tipo de letra con un toque más formal */
+}
+
+.part3 p {
+  font-size: 18px; /* Tamaño de letra para un mejor contraste y legibilidad */
+}
+.part4 {
+  padding: 35%;
+  background: radial-gradient(circle, #11c7d4, #f7f1f3); /* Fondo degradado radial desde el centro hacia afuera */
+
+  background: linear-gradient(to bottom, #11c7d4, #f7f1f3); /* Fondo degradado lineal de arriba hacia abajo */
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+  .part5 {
+    padding: 35%;
+    background: radial-gradient(circle, #11c7d4, #f7f1f3); /* Fondo degradado radial desde el centro hacia afuera */
+  
+    background: linear-gradient(to bottom, #11c7d4, #f7f1f3); /* Fondo degradado lineal de arriba hacia abajo */
+  
+    background-repeat: no-repeat;
+    background-size: cover;
  
+  }
+.part6{
+  padding: 35%;
+  background: radial-gradient(circle, #11c7d4, #f7f1f3); /* Fondo degradado radial desde el centro hacia afuera */
+  
+  background: linear-gradient(to bottom, #11c7d4, #f7f1f3); /* Fondo degradado lineal de arriba hacia abajo */
+
+
+}
+
+.part7{
+  padding: 35%;
+  background: radial-gradient(circle, #11c7d4, #f7f1f3); /* Fondo degradado radial desde el centro hacia afuera */
+  
+  background: linear-gradient(to bottom, #11c7d4, #f7f1f3); /* Fondo degradado lineal de arriba hacia abajo */
+}
+.part8{
+  padding: 35%;
+  background: radial-gradient(circle, #11c7d4, #f7f1f3); /* Fondo degradado radial desde el centro hacia afuera */
+  
+  background: linear-gradient(to bottom, #11c7d4, #f7f1f3); /* Fondo degradado lineal de arriba hacia abajo */
+
+
+
+}
+.part9{
+
+    padding: 29%;
+  background-image: url('../imagenes_tramite/collage_seccion.png');
+  background-color: #f4f4f4; /* Color de fondo */
+  font-family: 'Arial', sans-serif; /* Tipo de letra */
+  font-size: 16px; /* Tamaño de letra */
+  line-height: 1.5; /* Altura de línea para una mejor legibilidad */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
